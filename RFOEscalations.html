@@ -1,0 +1,47 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("Ryan.reichman@centurylink.com", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
+
+
+<!DOCTYPE html> 
+
+<html>
+    <head>
+        <title> RFO Escalations </title>
+        <link href='escalations.css' rel='stylesheet'>
+    </head> 
+        <img src='./Lumen Logo Blue_Black RGB.png' />
+        <ul>
+            <li> <a id='home' href='./index.html'> Home </a> </li>
+            <li> <a id="escalations" href='./RFOEscalations.html'> RFO Escalations </a> </li>
+            <li> <a id='field' href='./fieldservices.html'> Field Services Updates </a> </li>
+            <li> <a id='event' href='eventrequest.html'> Event Request </a> </li>
+        </ul>
+        <h1> RFO Escalations </h1>
+    <body>
+        <br></br>
+        <form method="post" action="./email.php" target='blank'>
+            <textarea name="paragraph_text" cols="70" rows="20"></textarea>
+            <br></br>
+           <input type='submit' value="Submit"/>
+        </form>
+
+    </body>
+
+
+
+
+</html>
